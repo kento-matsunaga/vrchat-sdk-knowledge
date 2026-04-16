@@ -30,6 +30,34 @@ Limits: Angle, Max 20〜35°
 Pull: 0.35〜0.5
 ```
 
+### ツインテール・ロングヘア（根元安定＋先端ふわふわ）【実証済み】
+カーブが必須。カーブなしだと根元からブランブランになるか、全体が硬くなるかの二択になる。
+```
+Integration Type: Advanced
+Multi Child Type: Ignore     ← Averageだと板のように動く。必ずIgnore
+Pull:             0.25  [C]  根元1.0 → 先端0.15
+Momentum:         0.5   [C]  根元0.2 → 先端1.0
+Stiffness:        0.3   [C]  根元1.0 → 先端0.0
+Gravity:          0.3   [C]  根元0.3 → 先端1.0
+Gravity Falloff:  0.85  [C]
+Immobile:         0.3        ← 0.8は高すぎ。髪が空中で固まる
+Max Angle:        90    [C]  根元0.2 → 先端1.0  ← 根元の暴れ防止の核心
+Endpoint Position: (0, -0.15, 0)
+```
+**ポイント:**
+- Max Angleカーブの根元を0.2にする = 根元は18°しか動けない = ブランブラン防止
+- Immobileを0.8にすると髪が空中で固まる。0.1〜0.3が適正
+- Multi Child Type=Averageは全子ボーンの平均方向に動くので板状になる
+
+**よくある失敗パターンと対処:**
+| 症状 | 原因 | 対処 |
+|------|------|------|
+| 髪が空中で固まる | Immobileが高すぎ（0.5以上） | 0.1〜0.3に下げる |
+| 根元からブランブラン | Max Angleにカーブなし / Pullが低すぎ | Max Angleカーブ根元0.2、Pull上げる |
+| 全体が板のように動く | Multi Child Type=Average | Ignoreに変更 |
+| 先端が硬い | Pull/Stiffnessにカーブなし | カーブで先端を0に近づける |
+| ふわっと感がない | Momentumが低い / カーブなし | Momentum上げ＋カーブで先端1.0 |
+
 ### 揺れない（でも掴める）アクセサリー
 ```
 Pull: 0.95〜1.0
