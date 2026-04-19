@@ -1,5 +1,6 @@
 # Animator Parameters
 
+最終更新: 2026-04-19  
 公式: https://creators.vrchat.com/avatars/animator-parameters/
 
 VRChatがアバターのAnimatorに自動的に書き込むビルトインパラメータと、  
@@ -66,6 +67,8 @@ Expression Parametersで定義するカスタムパラメータの一覧。
 | VRMode | Int | 0, 1 | 1=VRモード、0=デスクトップモード |
 | MuteSelf | Bool | true/false | マイクをミュートしているか |
 | Earmuffs | Bool | true/false | イヤーマフ機能が有効か |
+| IsAnimatorEnabled | Bool | true/false | アニメーターが有効かどうか（SDK 3.10.x で文書化） |
+| IsOnFriendsList | Bool | true/false | このアバター着用者が自分のフレンドリストにいるか |
 
 **TrackingType 対応表:**
 | 値 | トラッキング状態 |
@@ -115,6 +118,9 @@ Expression Parametersアセットで自由に定義できるパラメータ。
   - Bool: 1bit
   - Int: 8bit
   - Float: 8bit（量子化されて同期）
+- Expression Parametersの最大登録数は **8192個**（ビット制限の範囲内で）
+- マルチプラットフォーム注意: パラメータはリスト順と型でマッチングされる（名前ではない）
+  → PC版とQuest版でパラメータの順序・型を必ず一致させること
 
 ### デフォルトパラメータ（VRChat標準）
 | 名前 | 型 | 説明 |
