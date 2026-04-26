@@ -4,6 +4,49 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-04-26
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3** が最新バージョンであることを確認（前回から変更なし）
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **Merge Armature** の Lock Mode 名称を公式ドキュメントに合わせて修正
+  - `Base Path` → `単方向`、`Both Paths` → `双方向` に更新
+  - 新パラメータを `modular-avatar/components/merge-armature.md` に追記:
+    - Reset Position オプション（Also set rotation / Also set local scale / Adjust outfit overall scale）
+    - Avoid name collisions（デフォルト ON）
+    - Adjust bone names to match target
+  - 出典: https://modular-avatar.nadena.dev/docs/reference/merge-armature
+
+### コミュニティTips
+
+- `community/tips-physbone.md`: ふんわりスカート（Hinge型）設定と足コライダー配置を追記
+  - Hinge 制限でのスカート設定値（Pull/Momentum/Immobileのカーブ活用）
+  - スカート貫通防止のための足コライダー推奨配置（UpperLeg/LowerLeg）
+  - 出典: https://note.com/x9n_note/n/nb45abf2f9e5a, https://cgbox.jp/2023/09/01/vrchat-physbone-howto/
+
+- `community/tips-animator-fx.md`: アニメーションクリップの "None" 使用禁止Tipを追記
+  - None → `proxy_empty` または空クリップへの置き換え推奨
+  - 出典: https://x.com/mimyquality/status/1822551094285021428
+
+- `community/tips-tools.md`: VRC Texture Optimizer を追記
+  - GPU ネイティブ圧縮、PC/Quest 両対応の無料テクスチャ最適化ツール
+  - 出典: https://booth.pm/ja/items/6915386, https://vrnavi.jp/avatar-weight-saving1/
+
+### 確認済み・変更なし
+
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters: 前回から変更なし（ドキュメント最終更新 2025-12-12）
+- Modular Avatar Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-04-19
 
 ### VRChat SDK（公式ドキュメント確認）

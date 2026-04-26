@@ -1,5 +1,6 @@
 # MA Merge Armature
 
+最終更新: 2026-04-26  
 公式: https://modular-avatar.nadena.dev/docs/reference/merge-armature
 
 衣装・アクセサリーのボーン構造をアバターのアーマチュアに統合する最重要コンポーネント。  
@@ -57,13 +58,28 @@
 | Lock Mode | Enum | 位置同期の方式（下記参照） |
 | Prefix/Suffix | String | 衣装ボーン名に付ける接頭/接尾辞（重複回避） |
 
-### Lock Mode
+### Lock Mode（Position Lock Mode）
 
 | モード | 説明 | 使いどころ |
 |-------|------|----------|
-| Not Locked | 制限なし（通常） | 通常の衣装 |
-| Base Path | 1方向同期 | 特殊な場合 |
-| Both Paths | 双方向同期 | 複雑な依存関係 |
+| 未ロック | 編集モードで衣装がアバターに追従しない | - |
+| 単方向 | アバター移動時に衣装が追従（**推奨**） | 通常の衣装 |
+| 双方向 | 相互に追従 | 複雑な依存関係がある場合 |
+
+### Reset Position オプション
+
+| オプション | 説明 |
+|---------|------|
+| Also set rotation | 回転もアバターに同期する |
+| Also set local scale | スケールもアバターに同期する |
+| Adjust outfit overall scale | 衣装全体のスケールをアバターに合わせて調整する |
+
+### その他のオプション
+
+| オプション | デフォルト | 説明 |
+|---------|----------|------|
+| Adjust bone names to match target | - | ターゲットに合わせてボーン名を自動調整する |
+| Avoid name collisions | ON | ボーン名の重複衝突を防止する |
 
 ---
 

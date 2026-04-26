@@ -1,6 +1,6 @@
 # PhysBone コミュニティTips
 
-最終更新: 2026-04-16
+最終更新: 2026-04-26
 
 ---
 
@@ -57,6 +57,31 @@ Endpoint Position: (0, -0.15, 0)
 | 全体が板のように動く | Multi Child Type=Average | Ignoreに変更 |
 | 先端が硬い | Pull/Stiffnessにカーブなし | カーブで先端を0に近づける |
 | ふわっと感がない | Momentumが低い / カーブなし | Momentum上げ＋カーブで先端1.0 |
+
+### ふんわりスカート（Hinge型）
+タイトなスカートにはAngle制限、ふんわり広がるスカートにはHinge制限が適している。  
+Momentumはカーブで根元は強く先端は弱くすることで、裾だけがふわっと広がる動きになる。
+
+```
+Integration Type: Advanced
+Limit Type: Hinge
+Pull:     0.1〜0.2   [C]  根元1.0 → 先端0.4
+Momentum: 0.5〜0.7   [C]  根元0.8 → 先端0.2
+Immobile: 0.5〜0.7   [C]  根元1.0 → 先端0.1
+Max Angle: 60〜90°
+Radius: 0.02〜0.03   [C]  根元0.5 → 先端1.0  ← 裾ほど広く（足との貫通防止）
+```
+
+**足との貫通防止コライダー配置（スカート向け）:**
+| 場所 | 形状 | Radius目安 |
+|------|------|-----------|
+| UpperLeg_L/R | Capsule | 0.08〜0.12 |
+| LowerLeg_L/R | Capsule | 0.06〜0.09 |
+
+→ スカートのPhysBone > Colliders リストに追加する。  
+→ Radiusカーブで先端を大きくすると裾が足を避けながら広がる。
+
+出典: https://note.com/x9n_note/n/nb45abf2f9e5a, https://cgbox.jp/2023/09/01/vrchat-physbone-howto/
 
 ### 揺れない（でも掴める）アクセサリー
 ```
