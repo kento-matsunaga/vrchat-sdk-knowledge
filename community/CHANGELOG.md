@@ -4,6 +4,44 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-05-03
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新バージョン v1.16.2**（2026年2月11日リリース）を確認
+  - 出典: https://modular-avatar.nadena.dev/docs/changelog
+
+- 未記載だった新コンポーネントを `modular-avatar/components/vrchat-specific.md` に追記:
+  - **MA Rename VRChat Collision Tags**（v1.13.0+）
+    - ContactsのCollision Tagを自動的にユニーク名にリネーム
+    - 複数の配布Prefabが同じタグ名を使っても誤検出されなくなる
+    - 出典: https://modular-avatar.nadena.dev/docs/reference/rename-collision-tags
+  - **MA Move Independently**（エディタ専用ユーティリティ）
+    - 子オブジェクトを動かさずに親オブジェクトのみを移動できる
+    - 衣装のHipボーン位置微調整に有用
+    - 出典: https://modular-avatar.nadena.dev/docs/reference/move-independently
+
+- `modular-avatar/overview.md` のコンポーネント一覧に上記2コンポーネントを追記
+- `community/tips-tools.md` のバージョン情報を更新（MA v1.16.2 を追記）
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-04-26
 
 ### VRChat SDK（公式ドキュメント確認）

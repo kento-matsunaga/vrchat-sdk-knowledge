@@ -1,6 +1,6 @@
 # Modular Avatar 概要
 
-最終更新: 2026-04-16  
+最終更新: 2026-05-03  
 公式: https://modular-avatar.nadena.dev/  
 GitHub: https://github.com/bdunderscore/modular-avatar  
 作者: bd_ (nadena.dev)
@@ -118,3 +118,10 @@ VRChat SDK ビルド
 | [MA Global Collider](components/vrchat-specific.md#global-collider) | 他アバターとのコライダー設定 |
 | [MA Platform Filter](components/vrchat-specific.md#platform-filter) | PC/Quest/iOSでの表示を制御 |
 | [MA Sync Parameter Sequence](components/vrchat-specific.md#sync-param-seq) | マルチプラットフォームのパラメータ順序統一 |
+| [MA Rename VRChat Collision Tags](components/vrchat-specific.md#rename-collision-tags) | Contactsの衝突タグを名前空間化（v1.13.0+） |
+
+### エディタユーティリティ系
+
+| コンポーネント | 概要 |
+|-------------|------|
+| [MA Move Independently](components/vrchat-specific.md#move-independently) | 子に影響せずオブジェクトを移動（エディタのみ） |
