@@ -4,6 +4,45 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-05-10
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新バージョン v1.16.2**: 前回から変更なし（2026年2月11日リリースのまま）
+- Merge Armature、Menu Installer: 変更なし
+- 出典: https://modular-avatar.nadena.dev/
+
+### コミュニティTips
+
+- `community/tips-tools.md` に以下3ツールを追記:
+
+  - **Meshia Mesh Simplification**: アバター全体のメッシュを一括ポリゴン削減するツール。目標パフォーマンスランクを指定して自動調整。lilNDMFMeshSimplifierの後継として現在主流。
+    - 出典: https://vrnavi.jp/avatar-weight-saving3/
+
+  - **ActualPerformanceWindow**: Unity Playモード内でアップロード後のパフォーマンス結果をリアルタイムプレビューできるツール（anatawa12作）。
+    - 出典: https://vrnavi.jp/avatar-weight-saving3/
+
+  - **ALCOM**: VCC（VRChat Creator Companion）の代替アセット管理ランチャー。2026年時点でコミュニティの一部がVCCからの移行を進めている。
+    - 出典: https://zenn.dev/exxxna/articles/a5cfff93823d8f
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters（IsAnimatorEnabled、IsOnFriendsList含む）: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-05-03
 
 ### VRChat SDK（公式ドキュメント確認）
