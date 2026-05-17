@@ -4,6 +4,58 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-05-17
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **バージョン更新: v1.16.2 → v1.17.1**
+  - 出典: https://modular-avatar.nadena.dev/docs/changelog
+
+- **v1.17.0**（2026-05-11）主な変更点:
+  - 新コンポーネント `MA Floor Adjuster` 追加: 靴底がワールドの床に合うようアバターの垂直位置を自動調整
+  - VRCRaycastコンポーネントとパラメータのサポート追加（SDK 3.10.3の新コンポーネントに対応）
+  - BlendShapeピッカーにマルチセレクト機能追加
+
+- **v1.17.1**（2026-05-14）:
+  - MA Floor Adjuster の実行順序を修正: TexTransToolなど既存のNDMFプラグインの後に実行されるように変更
+
+- 更新ファイル:
+  - `modular-avatar/overview.md`: MA Floor Adjusterをコンポーネント一覧に追記
+  - `modular-avatar/components/floor-adjuster.md`: 新規作成
+  - `community/tips-tools.md`: バージョン情報を v1.17.1 に更新、新コンポーネント情報追記
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### コミュニティTips
+
+- `community/tips-tools.md` に以下を追記:
+
+  - **SDKトラブルシューティング: Missing Credentials エラー対処法**
+    - VRChat Control Panel → Authentication → Logout → 再ログインで解決するケースが多い
+    - Logs/Library フォルダ削除で解決する場合もある
+    - 出典: https://zenn.dev/yrd_gs/articles/b123e9fee91ff9
+
+  - **パフォーマンスランク Excellent の数値基準**
+    - Triangles 32,000以下 / Texture Memory 40MB以下 / Skinned Meshes 1個以下 / Material Slots 4個以下
+    - AAO + lilAvatarUtils + ActualPerformanceWindowを組み合わせた最適化フロー
+    - 出典: https://qiita.com/Hellcat_152/items/ad1b1ceb2504bc39c0a4
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters（IsAnimatorEnabled、IsOnFriendsList含む）: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-05-10
 
 ### VRChat SDK（公式ドキュメント確認）

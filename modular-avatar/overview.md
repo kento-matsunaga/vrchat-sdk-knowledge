@@ -1,6 +1,6 @@
 # Modular Avatar 概要
 
-最終更新: 2026-05-03  
+最終更新: 2026-05-17  
 公式: https://modular-avatar.nadena.dev/  
 GitHub: https://github.com/bdunderscore/modular-avatar  
 作者: bd_ (nadena.dev)
@@ -119,6 +119,12 @@ VRChat SDK ビルド
 | [MA Platform Filter](components/vrchat-specific.md#platform-filter) | PC/Quest/iOSでの表示を制御 |
 | [MA Sync Parameter Sequence](components/vrchat-specific.md#sync-param-seq) | マルチプラットフォームのパラメータ順序統一 |
 | [MA Rename VRChat Collision Tags](components/vrchat-specific.md#rename-collision-tags) | Contactsの衝突タグを名前空間化（v1.13.0+） |
+
+### 位置・スケール調整系
+
+| コンポーネント | 概要 |
+|-------------|------|
+| [MA Floor Adjuster](components/floor-adjuster.md) | 靴底がワールドの床に合うようアバターの垂直位置を自動調整（v1.17.0+） |
 
 ### エディタユーティリティ系
 
