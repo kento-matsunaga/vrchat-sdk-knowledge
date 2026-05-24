@@ -4,6 +4,50 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-05-24
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新バージョン v1.17.1**: 前回から変更なし（2026-05-14 リリース済み）
+- 出典: https://modular-avatar.nadena.dev/docs/changelog
+
+- **v1.17.0 追記漏れを補完: MA Bone Proxy に Match Scale オプション追加**
+  - Bone Proxy コンポーネントに「Match scale」オプションが追加（v1.17.0）
+  - 参照先ボーンのスケールに自動的に合わせる機能
+  - `community/tips-tools.md` の MA Bone Proxy 説明行に追記
+
+### コミュニティTips
+
+- `community/tips-animator-fx.md` に以下を追記（最終更新日も更新）:
+
+  - **FX Controller の Layer Weight 設定（よくある落とし穴）**
+    - FX Controller に新しいレイヤーを追加した際、デフォルトの Weight が 0 のままだとアニメーションが一切再生されない
+    - Animator ウィンドウで歯車アイコン → Weight を 1.0 に設定すること
+    - 出典: https://signyamo.blog/vrchat_playable-layers/
+
+  - **パラメーター名の命名規則**
+    - 半角英数字とアンダースコアのみ推奨（日本語などのマルチバイト文字は不可）
+    - 大文字・小文字は区別される
+    - 出典: https://note.com/ninado/n/nc1c5806ab024
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters（IsAnimatorEnabled、IsOnFriendsList含む）: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-05-17
 
 ### Modular Avatar（公式ドキュメント確認）

@@ -1,6 +1,6 @@
 # Animator / FX Layer コミュニティTips
 
-最終更新: 2026-04-26
+最終更新: 2026-05-24
 
 ---
 
@@ -49,6 +49,24 @@ VRChat上でシェイプキーが正しく反映されないことがある。
 - 不要なレイヤー自体を削除するのが最もシンプルな解決策
 
 出典: https://x.com/mimyquality/status/1822551094285021428
+
+### FX Controller の Layer Weight 設定（重要・よくある落とし穴）
+FX Controller に新しいレイヤーを追加した際、**デフォルトの Weight が 0** のままだとアニメーションが一切再生されない。
+
+**確認手順:**
+1. FX Controller をダブルクリックして Animator ウィンドウを開く
+2. 追加したレイヤーの左側にある歯車アイコンをクリック
+3. Weight が **1.0** になっていることを確認・変更する
+
+出典: https://signyamo.blog/vrchat_playable-layers/
+
+### パラメーター名の命名規則
+アニメーターパラメーターの名前は **半角英数字とアンダースコアのみ** を推奨。
+- 日本語などのマルチバイト文字は使用しないこと（ビルド後に認識されない場合がある）
+- 大文字・小文字は区別される（`MyParam` と `myParam` は別のパラメーター）
+- Expression Parameters と Animator Controller 両方で名前を完全一致させること
+
+出典: https://note.com/ninado/n/nc1c5806ab024
 
 ### FloatパラメータをBlendTreeで使う
 Toggleではなく滑らかな変化が必要な場合:
