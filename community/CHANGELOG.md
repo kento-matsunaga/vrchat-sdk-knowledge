@@ -4,6 +4,57 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-05-31
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新バージョン v1.17.1**: 前回から変更なし（2026-05-14 リリース済み）
+- Merge Armature、Menu Installer: 変更なし
+- 出典: https://modular-avatar.nadena.dev/docs/changelog
+
+### コミュニティTips
+
+- `community/tips-physbone.md` に以下を追記（最終更新日も更新）:
+
+  - **Simplified モード 黄金比クイックリファレンス**（新セクション）
+    - ふわふわ系（髪・ケモ耳）: Pull 0.1 / Spring 0.6 / Immobility 0.3
+    - ぷるぷる系（胸・柔らかい肉）: Pull 0.1 / Spring 0.8 / Immobility 0.5
+    - ひらひら系（スカート・布）: Pull 0.2 / Spring 0.4 / Immobility 0.6
+    - 出典: https://vrc-step.com/vrc-avatar-physbones/
+
+  - **掴み・固定の制御（新セクション）**
+    - Allow Posing = false で他ユーザーのポーズ固定を禁止
+    - **複数PhysBoneで構成される部位は全コンポーネントに同一設定が必要**（よくある抜け漏れ）
+    - 出典: https://vrnavi.jp/physbone-fix/
+
+  - **パフォーマンス節約テクニック**に `AAO Merge PhysBone` を追記
+
+- `community/tips-tools.md` に以下を更新（最終更新日も更新）:
+
+  - **AvatarOptimizer (AAO) にバージョン情報 1.9.14 を追記**
+    - 主要機能に `Merge PhysBone` を追加
+    - 出典: https://vpm.anatawa12.com/avatar-optimizer/en/
+
+  - **バージョン・互換性情報テーブル** に `AvatarOptimizer (AAO) 1.9.14` 行を追加
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters（IsAnimatorEnabled、IsOnFriendsList含む）: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-05-24
 
 ### VRChat SDK（公式ドキュメント確認）
