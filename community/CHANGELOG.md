@@ -4,6 +4,52 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-06-07
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 前回から変更なし
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: いずれも変更なし
+- 出典: https://creators.vrchat.com/releases/
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新バージョン v1.17.1**: 前回から変更なし（2026-05-14 リリース済み）
+- Merge Armature、Menu Installer: 変更なし
+- 出典: https://modular-avatar.nadena.dev/docs/changelog
+
+### コミュニティTips
+
+- `community/tips-animator-fx.md` に以下を追記（最終更新日も更新）:
+
+  - **FX表情制御の高度な実装パターン**（新セクション）
+    - 右手優先表情システム: `Input(R) > 0` 条件でサブステートマシンを即座に抜け右手入力を優先する設計
+    - リップシンク中の表情変更を防ぐ `Voice < 0.01` 条件の活用法
+    - Contact連動 Override変数（例: `FaceNo(Override)`）でタッチ連動表情制御を実現するパターン
+    - 出典: https://note.com/x9n_note/n/nb77cf6b53e74
+
+- `community/tips-tools.md` に以下を追記（最終更新日も更新）:
+
+  - **AAO Max Texture Size** 機能を AvatarOptimizer の説明に追記
+    - テクスチャ最大解像度一括設定機能。4K→1024pxで59.81MB→11.25MBに削減する効果
+    - 出典: https://vr-lifemagazine.com/avatar-optimizer-how-to/
+
+  - **KRT Material Tools**（新ツールエントリ）
+    - Quick Variant機能: マテリアルを一括でMaterial Variant化し元アセットを汚さず改変を管理
+    - 出典: https://zenn.dev/nekobox/articles/d0e92cb8a6f8ba
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters（IsAnimatorEnabled、IsOnFriendsList含む）: 前回から変更なし
+- Modular Avatar Merge Armature、Menu Installer: 前回から変更なし
+
+---
+
 ## 2026-05-31
 
 ### VRChat SDK（公式ドキュメント確認）
