@@ -4,6 +4,61 @@ VRChat SDK & Modular Avatar ナレッジベースの週次更新記録。
 
 ---
 
+## 2026-06-14
+
+### VRChat SDK（公式ドキュメント確認）
+
+- **SDK 3.10.3**: 安定版は前回から変更なし
+- **SDK 3.10.4-beta.3**（2026-06-11）: ベータ版がリリース中。安定版への昇格待ち
+  - 詳細な変更内容は安定リリース時に改めて記録予定
+  - 出典: https://creators.vrchat.com/releases/
+- PhysBone仕様、Contacts、Constraints、Playable Layers、Animator Parameters: 変更なし
+
+### Modular Avatar（公式ドキュメント確認）
+
+- **最新安定版 v1.17.1**: 前回から変更なし
+- **v1.18.0-alpha.0**（2026-05-31）: アルファ版がリリース中
+  - **BlendShapeカーブリマッピング対応**（Added support for remapping blendshapes using a curve）
+  - Mesh Cutterプレビューのパフォーマンス改善
+  - Scale Adjusterプレビュー更新の修正
+  - **注意**: アルファ版のため本番アバターへの使用非推奨
+  - 出典: https://github.com/bdunderscore/modular-avatar/releases
+
+### コミュニティTips
+
+- `community/tips-physbone.md` に以下を追記（最終更新日も更新）:
+
+  - **VRChat内でのPhysBone診断方法**（新セクション）
+    - ExMenu → オプション → アバター → アバターのオーバーレイ → PhysBones で視覚的に確認可能
+    - 白い線（ボーンチェーン）と半透明球体（掴み・衝突判定）の見方を解説
+    - 出典: https://note.com/kalkal_vrc/n/nc5145318f864
+
+  - **PhysBoneが揺れない・掴めない場合の診断フロー**（新セクション）
+    - 揺れない: リーフボーンがない場合はEndpoint Position（非ゼロ値）またはBlenderでリーフボーン追加
+    - 全員が掴めない: Radius=0 / Allow Grabbing=False の見落としが多い
+    - 特定の人だけ掴めない: 相手のインタラクト許可範囲設定を確認
+    - 出典: https://note.com/kalkal_vrc/n/nc5145318f864, https://note.com/oyajik/n/n584365cc6b93
+
+- `community/tips-tools.md` に以下を更新（最終更新日も更新）:
+
+  - **バージョン・互換性情報テーブル** を更新
+    - SDK 3.10.4-beta.3（2026-06-11）をベータ版として記録
+    - MA 1.18.0-alpha.0（2026-05-31）をアルファ版として記録
+    - MA 1.18 alpha の新機能「BlendShapeカーブリマッピング」を追記
+
+### 確認済み・変更なし
+
+- VRChat SDK 3.10.3（安定版）: 前回から変更なし
+- PhysBone仕様（Version 1.0/1.1）: 前回から変更なし
+- Contacts仕様: 前回から変更なし
+- Constraints仕様（6種類）: 前回から変更なし
+- Playable Layers仕様: 前回から変更なし
+- Animator Parameters: 前回から変更なし
+- Modular Avatar v1.17.1（安定版）: 前回から変更なし
+- Merge Armature、Menu Installer: 変更なし
+
+---
+
 ## 2026-06-07
 
 ### VRChat SDK（公式ドキュメント確認）
